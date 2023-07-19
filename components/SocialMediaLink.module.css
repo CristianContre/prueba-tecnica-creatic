@@ -1,0 +1,25 @@
+.link {
+  margin: 8px;
+  transition: transform 0.4s;
+}
+
+.link:hover {
+  transform: scale(1.4);
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+}
+
+.facebook {
+  color: rgb(24, 118, 242);
+}
+
+.instagram {
+  color: rgb(145, 46, 185);
+}
+
+.tiktok {
+  color: rgb(254, 44, 85);
+}

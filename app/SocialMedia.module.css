@@ -1,0 +1,17 @@
+.socialMediaContainer {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  column-gap: 1rem;
+  background-color: rgba(var(--primary-color-rgb), 0.5);
+  width: max-content;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  padding: 4px 16px;
+}
+
+.logoContainer {
+  display: flex;
+}

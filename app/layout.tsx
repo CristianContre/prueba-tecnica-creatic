@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./Header";
 import "./globals.css";
+import SocialMedia from "./SocialMedia";
 
 export const metadata: Metadata = {
   title: "CDT CreaTIC",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <SocialMedia />
       </body>
     </html>
   );

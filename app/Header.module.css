@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--primary-color);
+  background-color: rgb(var(--primary-color-rgb));
   height: 60px;
   display: flex;
   align-items: center;
@@ -13,6 +13,6 @@
 }
 
 .headerLink:hover {
-  border-bottom: 4px solid var(--secondary-color);
+  border-bottom: 4px solid rgb(var(--secondary-color));
   color: rgb(var(--on-1));
 }
