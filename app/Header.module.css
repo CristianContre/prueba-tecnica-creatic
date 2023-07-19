@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--primary-color);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerLink {
+  padding: 4px 8px;
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.headerLink:hover {
+  border-bottom: 4px solid var(--secondary-color);
+  color: rgb(var(--on-1));
+}
