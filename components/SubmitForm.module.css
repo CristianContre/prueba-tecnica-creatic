@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.form input,
+.form button {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form input {
+  background-color: rgb(var(--primary-color-rgb));
+}
+
+.form button:hover {
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.loginButton {
+  background-color: rgb(247, 164, 31);
+}
+
+.loginButton:hover {
+  background-color: hsl(37, 93%, 48%);
+}
+
+.form .signUpButton {
+  background-color: transparent;
+  border: 2px solid rgb(var(--primary-color-rgb));
+  font-weight: 600;
+}
+
+.form .signUpButton:hover {
+  background-color: rgb(var(--primary-color-rgb));
+}

@@ -1,5 +1,9 @@
+"use client";
+
 import PageContent from "@/components/PageContent";
+import { store } from "@/store/store";
 import type { Metadata } from "next";
+import { Provider } from "react-redux";
 import Header from "./Header";
 import SocialMedia from "./SocialMedia";
 import "./globals.css";
@@ -17,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <SocialMedia />
-        <PageContent>{children}</PageContent>
+        <Provider store={store}>
+          <Header />
+          <SocialMedia />
+          <PageContent>{children}</PageContent>
+        </Provider>
       </body>
     </html>
   );

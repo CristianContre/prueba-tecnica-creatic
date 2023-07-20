@@ -14,7 +14,7 @@ const Header: NextPage = () => {
       <Link href="/contact" className={styles.headerLink}>
         Contáctanos
       </Link>
-      <Link href="/" className={styles.headerLink}>
+      <Link href="/register" className={styles.headerLink}>
         Registrarse
       </Link>
     </header>
