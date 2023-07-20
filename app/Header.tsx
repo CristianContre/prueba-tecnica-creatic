@@ -1,22 +1,15 @@
-import { NextPage } from "next";
-import Link from "next/link";
+"use client";
+
+import AppLink from "@/components/AppLink";
 import styles from "./Header.module.css";
 
-const Header: NextPage = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href="/" className={styles.headerLink}>
-        Inicio
-      </Link>
-      <Link href="/about" className={styles.headerLink}>
-        Quiénes Somos
-      </Link>
-      <Link href="/contact" className={styles.headerLink}>
-        Contáctanos
-      </Link>
-      <Link href="/register" className={styles.headerLink}>
-        Registrarse
-      </Link>
+      <AppLink href="/">Inicio</AppLink>
+      <AppLink href="/about">Quiénes Somos</AppLink>
+      <AppLink href="/contact">Contáctanos</AppLink>
+      <AppLink href="/register">Registrarse</AppLink>
     </header>
   );
 };

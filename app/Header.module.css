@@ -6,13 +6,10 @@
   justify-content: space-around;
 }
 
-.headerLink {
-  padding: 4px 8px;
-  border-bottom: 4px solid transparent;
-  transition: border-color 0.2s;
-}
-
-.headerLink:hover {
-  border-bottom: 4px solid rgb(var(--secondary-color));
-  color: rgb(var(--on-1));
+@media (max-width: 1120px) {
+  .header {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 0px;
+  }
 }
