@@ -17,8 +17,10 @@ export default function RootLayout({
       <body>
         <Provider store={store}>
           <Header />
-          <SocialMedia />
-          <PageContent>{children}</PageContent>
+          <PageContent>
+            {children}
+            <SocialMedia />
+          </PageContent>
         </Provider>
       </body>
     </html>

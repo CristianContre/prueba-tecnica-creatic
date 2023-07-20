@@ -4,14 +4,16 @@ import styles from "./SocialMedia.module.css";
 
 const SocialMedia = () => {
   return (
-    <Card className={styles.socialMediaCard}>
-      <span>Síguenos en:</span>
-      <div className={styles.logoContainer}>
-        <SocialMediaLink mediaName="facebook" />
-        <SocialMediaLink mediaName="instagram" />
-        <SocialMediaLink mediaName="tiktok" />
-      </div>
-    </Card>
+    <div className={styles.socialMediaContainer}>
+      <Card className={styles.socialMediaCard}>
+        <span>Síguenos en:</span>
+        <div className={styles.logoContainer}>
+          <SocialMediaLink mediaName="facebook" />
+          <SocialMediaLink mediaName="instagram" />
+          <SocialMediaLink mediaName="tiktok" />
+        </div>
+      </Card>
+    </div>
   );
 };
 

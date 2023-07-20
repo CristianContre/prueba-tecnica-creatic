@@ -1,6 +1,7 @@
 .pageContent {
   position: relative;
   min-height: calc(100vh - var(--headerHeight));
+  width: 100%;
 }
 
 .background {
