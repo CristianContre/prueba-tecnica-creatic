@@ -8,10 +8,10 @@ const Header: NextPage = () => {
       <Link href="/" className={styles.headerLink}>
         Inicio
       </Link>
-      <Link href="/" className={styles.headerLink}>
+      <Link href="/about" className={styles.headerLink}>
         Quiénes Somos
       </Link>
-      <Link href="/" className={styles.headerLink}>
+      <Link href="/contact" className={styles.headerLink}>
         Contáctanos
       </Link>
       <Link href="/" className={styles.headerLink}>

@@ -1,7 +1,8 @@
+import PageContent from "@/components/PageContent";
 import type { Metadata } from "next";
 import Header from "./Header";
-import "./globals.css";
 import SocialMedia from "./SocialMedia";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CDT CreaTIC",
@@ -17,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <main>{children}</main>
         <SocialMedia />
+        <PageContent>{children}</PageContent>
       </body>
     </html>
   );

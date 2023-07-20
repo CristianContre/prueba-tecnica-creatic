@@ -1,0 +1,24 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.contact p {
+text-align: justify;
+}
+
+.cardInfo {
+  display: grid;
+}
+
+.logo{
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .contact {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}

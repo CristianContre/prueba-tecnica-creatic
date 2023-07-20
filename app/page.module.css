@@ -1,10 +1,37 @@
-/* Mobile */
-@media (max-width: 700px) {
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+.rightCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.bigImages {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.smallImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 1rem;
+}
+
+@media (max-width: 1120px) {
+  .home {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
 }
