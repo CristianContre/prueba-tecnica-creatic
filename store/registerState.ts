@@ -18,9 +18,6 @@ export const registerState = createSlice({
     name: 'register',
     initialState,
     reducers: {
-        alertState: (state) => {
-            window.alert(`Email: ${state.email}\nPassword: ${state.password}`);
-        },
         setEmail: (state, action: PayloadAction<string>) => {
             state.email = action.payload;
         },
@@ -34,7 +31,7 @@ export const registerState = createSlice({
                 if (userExists) {
                     if (actionType === "login") {
                         if (userExists.password === data.password) {
-                            window.alert("Se ha iniciado sesión correctamente");
+                            window.alert(`Se ha iniciado sesión correctamente con los siguientes datos:\nEmail: ${state.email}\nPassword: ${state.password}`);
                         } else {
                             window.alert("Contraseña incorrecta");
                         }
@@ -45,7 +42,7 @@ export const registerState = createSlice({
                     if (actionType === "signup") {
                         if (data.password) {
                             state.users.push(data);
-                            window.alert("El usuario ha sido registrado correctamente");
+                            window.alert(`El usuario ha sido registrado correctamente con los siguientes datos:\nEmail: ${state.email}\nPassword: ${state.password}`);
                         } else {
                             window.alert("Complete el campo de la contraseña");
                         }
@@ -60,6 +57,6 @@ export const registerState = createSlice({
     },
 });
 
-export const { alertState, setEmail, setPassword, authenticate } = registerState.actions;
+export const { setEmail, setPassword, authenticate } = registerState.actions;
 
 export default registerState.reducer;
