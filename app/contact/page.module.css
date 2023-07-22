@@ -1,24 +1,15 @@
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
+.aboutCardContent {
+  display: flex;
+  gap: var(--padding-lg);
+  align-items: center;
 }
 
-.contact p {
-text-align: justify;
+.logo {
+  max-width: 300px;
 }
 
-.cardInfo {
-  display: grid;
-}
-
-.logo{
-  width: 100%;
-}
-
-@media (max-width: 1120px) {
-  .contact {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
+@media (max-width: 768px) {
+  .aboutCardContent {
+    flex-direction: column;
   }
 }

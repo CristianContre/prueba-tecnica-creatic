@@ -1,0 +1,40 @@
+.main {
+  position: relative;
+  min-height: calc(100vh - var(--headerHeight));
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.background {
+  height: 100%;
+  background-image: url("/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: var(--padding-lg);
+  row-gap: var(--padding-lg);
+  padding: calc(var(--padding-lg));
+  padding-bottom: calc(2 * var(--padding-lg) + var(--card-height));
+  min-height: calc(100vh - var(--headerHeight));
+  max-width: var(--breakpoint);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

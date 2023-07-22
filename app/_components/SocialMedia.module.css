@@ -1,0 +1,35 @@
+.socialMediaContainer {
+  position: absolute;
+  bottom: var(--padding-lg);
+  right: var(--padding-lg);
+  z-index: 1;
+  color: white;
+  display: grid;
+  margin-top: var(--padding-lg);
+}
+
+.socialMediaCard {
+  height: 60px;
+  max-height: 60px;
+}
+
+.mediaCardContent {
+  display: flex;
+  column-gap: var(--padding-md);
+}
+
+.logoContainer {
+  display: flex;
+  column-gap: var(--padding-md);
+}
+
+@media (max-width: 768px) {
+  .socialMediaContainer {
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+
+  .socialMediaCard {
+    margin-top: var(--padding-lg);
+  }
+}

@@ -1,11 +1,11 @@
 "use client";
 
-import PageContent from "@/components/PageContent";
 import { store } from "@/store/store";
 import { Provider } from "react-redux";
-import Header from "./Header";
-import SocialMedia from "./SocialMedia";
+import Header from "./_components/Header";
 import "./globals.css";
+import styles from "./layout.module.css";
+import SocialMedia from "./_components/SocialMedia";
 
 export default function RootLayout({
   children,
@@ -17,10 +17,13 @@ export default function RootLayout({
       <body>
         <Provider store={store}>
           <Header />
-          <PageContent>
-            {children}
-            <SocialMedia />
-          </PageContent>
+          <main className={styles.main}>
+            <div className={styles.background}></div>
+            <div className={styles.content}>
+              {children}
+              <SocialMedia />
+            </div>
+          </main>
         </Provider>
       </body>
     </html>

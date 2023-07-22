@@ -1,0 +1,17 @@
+.headerLink {
+  padding: 4px 8px;
+  height: var(--app-link-height);
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.2s;
+  background-color: rgb(var(--primary-color-rgb));
+  text-align: center;
+}
+
+.headerLink:hover {
+  border-bottom: 4px solid rgb(var(--secondary-color-rgb));
+  color: rgb(var(--on-1));
+}
+
+.activeLink {
+  border-bottom: 4px solid rgb(var(--secondary-color-rgb));
+}

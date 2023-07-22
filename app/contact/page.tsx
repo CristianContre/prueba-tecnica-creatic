@@ -1,20 +1,28 @@
-import Card from "@/components/Card";
+import Image from "next/image";
 import styles from "./page.module.css";
+import Card from "../_components/Card";
 
 export default function About() {
   return (
-    <div className={styles.contact}>
-      <Card className={styles.cardInfo}>
-        <p>
-          Vereda el Cofre, Parcelación la Margarita, Finca Santa María, Casa 1,
-          Popayán, Cauca 190002, CO
-        </p>
-        <br />
-        <p>comunicaciones@cdtcreatic.com</p>
-      </Card>
-      <Card className={styles.cardInfo}>
-        <img src="/logo.png" className={styles.logo} alt="logo cdt creatic" />
-      </Card>
-    </div>
+    <Card>
+      <div className={styles.aboutCardContent}>
+        <div>
+          <p>
+            Vereda el Cofre, Parcelación la Margarita, Finca Santa María, Casa
+            1, Popayán, Cauca 190002, CO
+          </p>
+          <br />
+          <p>comunicaciones@cdtcreatic.com</p>
+        </div>
+        <Image
+          src="/logo.png"
+          alt="logo cdt creatic"
+          width={100}
+          height={100}
+          layout="responsive"
+          className={styles.logo}
+        />
+      </div>
+    </Card>
   );
 }
