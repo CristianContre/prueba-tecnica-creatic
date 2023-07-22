@@ -27,6 +27,7 @@
   .socialMediaContainer {
     position: relative;
     grid-template-columns: 1fr;
+    right: 0;
   }
 
   .socialMediaCard {
